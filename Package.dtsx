@@ -1,0 +1,1151 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/13/2021 1:41:36 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="CKLAP985"
+  DTS:CreatorName="CLERKS\astill"
+  DTS:DTSID="{BCC23AB6-C94B-4F7B-9192-CEC60746693A}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.167"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="17"
+  DTS:VersionGUID="{A03CBB5C-FC05-4FC1-B46A-37BC8CE30F71}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CSV Users File]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{0EA18963-9CEA-4C93-82EE-5D8A99DDF7CE}"
+      DTS:ObjectName="CSV Users File">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="\\fileserver\ExternalReports\CultureAmpUserFiles\CA_UserFile.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Name"
+              DTS:DTSID="{5968C965-F63A-4DDE-8E15-E4747B98CADF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Preferred Name"
+              DTS:DTSID="{0B2D478B-49B4-4C2F-99EB-D0321D3D8757}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Employee Id"
+              DTS:DTSID="{616370EE-A20B-470D-92DE-5C7D124991DB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Email"
+              DTS:DTSID="{6BE2514E-DA65-4131-AE68-E0B8D8C12997}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date of Birth"
+              DTS:DTSID="{E43F1539-0E82-48CE-B1F2-BA3809BE143F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Start Date"
+              DTS:DTSID="{0377FEDD-7DC6-48B5-AD5E-A72FBF32860F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="End Date"
+              DTS:DTSID="{78A0515C-D025-48C4-94CA-703A380A0F9D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Language"
+              DTS:DTSID="{F4D8D92C-5066-49D8-9848-0D70DA364B00}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Manager Email"
+              DTS:DTSID="{79DD017D-0572-4887-849B-F5EA887FC6E2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Manager"
+              DTS:DTSID="{2BBEA7EE-3532-4BD4-9A64-303E74F930FC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Performance Rating"
+              DTS:DTSID="{BCF8E222-5787-4495-BE13-0CAC6E9D4872}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{67ED1F2A-8E88-482C-AD6A-BF03C8CD0149}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Location"
+              DTS:DTSID="{F95E540C-D634-41E3-99E7-78ECD43E64C0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Department"
+              DTS:DTSID="{6DA2F606-BF30-4256-A211-88C01CE7D233}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Employment Type"
+              DTS:DTSID="{AC698110-ACEF-4061-886B-F269994085B5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Job Title"
+              DTS:DTSID="{EFEAE176-8C3D-4EAE-870E-762BB0334BCB}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[MUNIS DB Source]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{4ED317D1-3595-42B1-B4B4-584CC549491F}"
+      DTS:ObjectName="MUNIS DB Source">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=orangecclkotcourtflmunisdb.tylerhost.net;User ID=9846ssrs;Initial Catalog=mun9846prod;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAkaHbN5BqKEOTILl7GHOMOwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADSSe0J1KbeWyTvvq1TzIKzAAAAAASAAACgAAAAEAAAAHg1ChEX/b2/BxiiTClEXEQgAAAAhp85hHJaWA8IUEirEMZCl3wx2raGWHjWQuILHZyO7l4UAAAAgkuQc0DrrHK8LxSTEj6NDRFnoIM</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{17EF0FCB-7891-4CC0-95CE-E74DCE1CEBF8}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;\\\\fileserver\\ExternalReports\\CultureAmpUserFiles\\CA_UserFile_&quot;  + &quot;&quot; + RIGHT( &quot;00&quot; + (DT_STR, 2 , 1252)DATEPART( &quot;month&quot; , GETDATE() ) , 2 ) + &quot;&quot; + RIGHT( &quot;00&quot; + (DT_STR, 2 , 1252)DATEPART( &quot;day&quot; , GETDATE() ) , 2 ) + (DT_STR, 4 , 1252)DATEPART( &quot;year&quot; , GETDATE() ) + &quot;.csv&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="DestinationFileName">
+      <DTS:VariableValue
+        DTS:DataType="8">\\fileserver\ExternalReports\CultureAmpUserFiles\CA_UserFile_12222021.csv</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{7358079C-CB96-49E4-B2EB-9E4A7461AD9C}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;\\\\fileserver\\ExternalReports\\CultureAmpUserFiles\\CA_UserFile.csv&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="SourceFileName">
+      <DTS:VariableValue
+        DTS:DataType="8">\\fileserver\ExternalReports\CultureAmpUserFiles\CA_UserFile.csv</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Rename User CSV File"
+      DTS:CreationName="Microsoft.FileSystemTask"
+      DTS:Description="File System Task"
+      DTS:DTSID="{EB023677-7F6C-45BB-B381-BB889C40D8F9}"
+      DTS:ExecutableType="Microsoft.FileSystemTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Rename User CSV File"
+      DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <FileSystemData
+          TaskOperationType="RenameFile"
+          TaskOverwriteDestFile="True"
+          TaskSourcePath="User::SourceFileName"
+          TaskIsSourceVariable="True"
+          TaskDestinationPath="User::DestinationFileName"
+          TaskIsDestinationVariable="True" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Retrieve user information from MUNIS into User CSV File"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{1C15EB71-DEFF-437F-A5E5-800AF759E8E1}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Retrieve user information from MUNIS into User CSV File"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="MUNIS DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SET NOCOUNT ON
+
+SELECT 
+	replace(prim.a_name_first + ' ' + prim.a_name_minit + ' ' + prim.a_name_last, '  ', ' ') AS 'Name',
+	prim.a_name_first AS 'Preferred Name',
+	'' AS 'Employee Id',
+	prim.e_email AS 'Email',
+	format(prim.e_date_of_birth, 'MMM dd yyyy') 'Date of Birth',
+	format(prim.e_orig_hire_date, 'MMM dd yyyy') AS 'Start Date',
+	ISNULL(format(prim.e_terminated_date, 'MMM dd yyyy'), '') AS 'End Date',
+	'en' as 'Language',
+	man.e_email as 'Manager Email',
+	replace(man.a_name_first + ' ' + man.a_name_minit + ' ' + man.a_name_last, '  ', ' ') as 'Manager',
+	eval.e_overall_rating as 'Performance Rating',
+	prim.e_gender as 'Gender',
+	'OCCC' as 'Location',
+	prim.a_location_p_desc as 'Department',
+	case
+		when prim.e_eeo_part_full_t = 'F' then 'Full-time' 
+		when prim.e_eeo_part_full_t = 'P' then 'Part-time' 
+	end as 'Employment Type',
+	prim.a_job_class_desc as 'Job Title'
+
+FROM pr_employee_master prim
+	LEFT JOIN pr_employee_master man
+	on prim.e_supervisor = man.a_employee_number
+	LEFT JOIN (
+				select pm_evaluations.*, row_number() over (partition by a_employee_number order by e_actual_cpl_date desc) as rn 
+				from pm_evaluations 
+			) eval  on eval.a_employee_number = prim.a_employee_number
+WHERE prim.e_activity_status = 'A'	
+and lower(prim.a_name_last) in ('still', 'watts', 'smith') and prim.a_location_primary = 2101
+and eval.rn = 1
+ORDER BY 'Name'</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[MUNIS DB Source]"
+                  connectionManagerRefId="Package.ConnectionManagers[MUNIS DB Source]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                      length="8000"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Name]"
+                      name="Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Preferred Name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Preferred Name]"
+                      length="30"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Preferred Name]"
+                      name="Preferred Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Employee Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Employee Id]"
+                      length="1"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Employee Id]"
+                      name="Employee Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Email]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Email]"
+                      length="256"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Email]"
+                      name="Email"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Date of Birth]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Date of Birth]"
+                      length="4000"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Date of Birth]"
+                      name="Date of Birth"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Start Date]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Start Date]"
+                      length="4000"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Start Date]"
+                      name="Start Date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[End Date]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[End Date]"
+                      length="4000"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[End Date]"
+                      name="End Date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Language]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Language]"
+                      length="2"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Language]"
+                      name="Language"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Manager Email]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Manager Email]"
+                      length="256"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Manager Email]"
+                      name="Manager Email"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Manager]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Manager]"
+                      length="8000"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Manager]"
+                      name="Manager"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Performance Rating]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Performance Rating]"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Performance Rating]"
+                      name="Performance Rating"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Gender]"
+                      length="1"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Gender]"
+                      name="Gender"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Location]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Location]"
+                      length="4"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Location]"
+                      name="Location"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Department]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Department]"
+                      length="30"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Department]"
+                      name="Department"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Employment Type]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Employment Type]"
+                      length="9"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Employment Type]"
+                      name="Employment Type"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Job Title]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Job Title]"
+                      length="30"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Job Title]"
+                      name="Job Title"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8000"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Preferred Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="Preferred Name" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Employee Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="Employee Id" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Email]"
+                      codePage="1252"
+                      dataType="str"
+                      length="256"
+                      name="Email" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Date of Birth]"
+                      dataType="wstr"
+                      length="4000"
+                      name="Date of Birth" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Start Date]"
+                      dataType="wstr"
+                      length="4000"
+                      name="Start Date" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[End Date]"
+                      dataType="wstr"
+                      length="4000"
+                      name="End Date" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Language]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="Language" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Manager Email]"
+                      codePage="1252"
+                      dataType="str"
+                      length="256"
+                      name="Manager Email" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Manager]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8000"
+                      name="Manager" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Performance Rating]"
+                      dataType="i2"
+                      name="Performance Rating" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Location]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name="Location" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Department]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="Department" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Employment Type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="9"
+                      name="Employment Type" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].ExternalColumns[Job Title]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="Job Title" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8000"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Name]"
+                      name="Name" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Preferred Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Preferred Name]"
+                      name="Preferred Name" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Employee Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Employee Id]"
+                      name="Employee Id" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Email]"
+                      codePage="1252"
+                      dataType="str"
+                      length="256"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Email]"
+                      name="Email" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Date of Birth]"
+                      dataType="wstr"
+                      length="4000"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Date of Birth]"
+                      name="Date of Birth" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Start Date]"
+                      dataType="wstr"
+                      length="4000"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Start Date]"
+                      name="Start Date" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[End Date]"
+                      dataType="wstr"
+                      length="4000"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[End Date]"
+                      name="End Date" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Language]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Language]"
+                      name="Language" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Manager Email]"
+                      codePage="1252"
+                      dataType="str"
+                      length="256"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Manager Email]"
+                      name="Manager Email" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Manager]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8000"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Manager]"
+                      name="Manager" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Performance Rating]"
+                      dataType="i2"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Performance Rating]"
+                      name="Performance Rating" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Gender]"
+                      name="Gender" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Location]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Location]"
+                      name="Location" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Department]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Department]"
+                      name="Department" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Employment Type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="9"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Employment Type]"
+                      name="Employment Type" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Job Title]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[Job Title]"
+                      name="Job Title" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Retrieve user information from MUNIS into User CSV File\Users File"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Users File"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[CSV Users File]"
+                  connectionManagerRefId="Package.ConnectionManagers[CSV Users File]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].Columns[Name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="8000"
+                      cachedName="Name"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Name]"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Name]" />
+                    <inputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].Columns[Preferred Name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="30"
+                      cachedName="Preferred Name"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Preferred Name]"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Preferred Name]" />
+                    <inputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].Columns[Employee Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="Employee Id"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Employee Id]"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Employee Id]" />
+                    <inputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].Columns[Email]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="256"
+                      cachedName="Email"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Email]"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Email]" />
+                    <inputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].Columns[Date of Birth]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Date of Birth"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Date of Birth]"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Date of Birth]" />
+                    <inputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].Columns[Start Date]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Start Date"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Start Date]"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Start Date]" />
+                    <inputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].Columns[End Date]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="End Date"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[End Date]"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[End Date]" />
+                    <inputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].Columns[Language]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="Language"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Language]"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Language]" />
+                    <inputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].Columns[Manager Email]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="256"
+                      cachedName="Manager Email"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Manager Email]"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Manager Email]" />
+                    <inputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].Columns[Manager]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="8000"
+                      cachedName="Manager"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Manager]"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Manager]" />
+                    <inputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].Columns[Performance Rating]"
+                      cachedDataType="i2"
+                      cachedName="Performance Rating"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Performance Rating]"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Performance Rating]" />
+                    <inputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].Columns[Gender]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="Gender"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Gender]"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Gender]" />
+                    <inputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].Columns[Location]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="4"
+                      cachedName="Location"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Location]"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Location]" />
+                    <inputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].Columns[Department]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="30"
+                      cachedName="Department"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Department]"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Department]" />
+                    <inputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].Columns[Employment Type]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="9"
+                      cachedName="Employment Type"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Employment Type]"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Employment Type]" />
+                    <inputColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].Columns[Job Title]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="30"
+                      cachedName="Job Title"
+                      externalMetadataColumnId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Job Title]"
+                      lineageId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output].Columns[Job Title]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Preferred Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Preferred Name" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Employee Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Employee Id" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Email]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Email" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Date of Birth]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Date of Birth" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Start Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Start Date" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[End Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="End Date" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Language]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Language" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Manager Email]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Manager Email" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Manager]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Manager" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Performance Rating]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Performance Rating" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Location]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Location" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Department]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Department" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Employment Type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Employment Type" />
+                    <externalMetadataColumn
+                      refId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input].ExternalColumns[Job Title]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Job Title" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Retrieve user information from MUNIS into User CSV File.Paths[OLE DB Source Output]"
+              endId="Package\Retrieve user information from MUNIS into User CSV File\Users File.Inputs[Flat File Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{A6FF9E18-9A57-4D0C-BA35-F91F5C3B25E2}"
+      DTS:From="Package\Retrieve user information from MUNIS into User CSV File"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Rename User CSV File" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="358,42"
+          Id="Package\Retrieve user information from MUNIS into User CSV File"
+          TopLeft="498,69" />
+        <NodeLayout
+          Size="193,42"
+          Id="Package\Rename User CSV File"
+          TopLeft="530,203" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="677,111">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-50.5,92"
+              Start="0,0"
+              End="-50.5,84.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,42"
+                    Point2="0,46"
+                    Point3="-4,46" />
+                  <mssgle:LineSegment
+                    End="-46.5,46" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-46.5,46"
+                    Point2="-50.5,46"
+                    Point3="-50.5,50" />
+                  <mssgle:LineSegment
+                    End="-50.5,84.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Retrieve user information from MUNIS into User CSV File">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source"
+          TopLeft="512,113" />
+        <NodeLayout
+          Size="128,42"
+          Id="Package\Retrieve user information from MUNIS into User CSV File\Users File"
+          TopLeft="571,281" />
+        <EdgeLayout
+          Id="Package\Retrieve user information from MUNIS into User CSV File.Paths[OLE DB Source Output]"
+          TopLeft="597,155">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="38,126"
+              Start="0,0"
+              End="38,118.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,59" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,59"
+                    Point2="0,63"
+                    Point3="4,63" />
+                  <mssgle:LineSegment
+                    End="34,63" />
+                  <mssgle:CubicBezierSegment
+                    Point1="34,63"
+                    Point2="38,63"
+                    Point3="38,67" />
+                  <mssgle:LineSegment
+                    End="38,118.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Retrieve user information from MUNIS into User CSV File\MUNIS DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
